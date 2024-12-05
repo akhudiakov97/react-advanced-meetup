@@ -2129,12 +2129,12 @@ react/cjs/react.development.js:
    *)
 */
 
-__commonJS.$$id = "/Users/ahoodyakov/IdeaProjects/simple-rsc/build/chunk-4DEA5GI6.js__commonJS";
+__commonJS.$$id = "/Users/ahoodyakov/react-advanced-meetup/react-advanced-meetup/rsc/build/chunk-4DEA5GI6.js__commonJS";
 __commonJS.$$typeof = Symbol.for("react.client.reference");
 			
-__toESM.$$id = "/Users/ahoodyakov/IdeaProjects/simple-rsc/build/chunk-4DEA5GI6.js__toESM";
+__toESM.$$id = "/Users/ahoodyakov/react-advanced-meetup/react-advanced-meetup/rsc/build/chunk-4DEA5GI6.js__toESM";
 __toESM.$$typeof = Symbol.for("react.client.reference");
 			
-require_react.$$id = "/Users/ahoodyakov/IdeaProjects/simple-rsc/build/chunk-4DEA5GI6.jsrequire_react";
+require_react.$$id = "/Users/ahoodyakov/react-advanced-meetup/react-advanced-meetup/rsc/build/chunk-4DEA5GI6.jsrequire_react";
 require_react.$$typeof = Symbol.for("react.client.reference");
 			
