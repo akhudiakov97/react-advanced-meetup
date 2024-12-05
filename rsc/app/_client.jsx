@@ -1,13 +1,11 @@
 import { createRoot } from 'react-dom/client';
 import { createFromFetch } from 'react-server-dom-webpack/client';
 
-// HACK: map webpack resolution to native ESM
-// @ts-expect-error Property '__webpack_require__' does not exist on type 'Window & typeof globalThis'.
+// Map webpack resolution to native ESM. it fixes Uncaught ReferenceError: __webpack_require__ is not defined
 window.__webpack_require__ = async (id) => {
   return import(id);
 };
 
-// @ts-expect-error `root` might be null
 const root = createRoot(document.getElementById('root'));
 
 /**

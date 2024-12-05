@@ -59,7 +59,6 @@ export default async function Page() {
 		<>
 			<h1 className="text-6xl font-extrabold text-center text-gray-900 mb-8 tracking-tight">Top US Headlines</h1>
 			<Suspense fallback={<div className="text-center text-lg">Getting news</div>}>
-				{/* @ts-expect-error 'Promise<Element>' is not a valid JSX element. */}
 				<News />
 			</Suspense>
 		</>

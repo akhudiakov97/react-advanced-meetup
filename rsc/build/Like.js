@@ -923,12 +923,23 @@ var require_jsx_runtime = __commonJS({
 var import_react = __toESM(require_react(), 1);
 var import_jsx_runtime = __toESM(require_jsx_runtime(), 1);
 "use client";
-function Like() {
+function Like({ className }) {
   const [likes, setLikes] = (0, import_react.useState)(0);
-  return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", { onClick: () => setLikes(likes + 1), children: [
-    "\u2665 ",
-    likes
-  ] });
+  const [isLiked, setIsLiked] = (0, import_react.useState)(false);
+  return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(
+    "button",
+    {
+      onClick: () => {
+        setLikes(likes + 1);
+        setIsLiked(!isLiked);
+      },
+      className: `text-xl focus:outline-none ${className} ${isLiked ? "text-red-500" : "text-gray-500"} hover:text-red-600 transition-colors duration-200`,
+      children: [
+        "\u2665 ",
+        likes
+      ]
+    }
+  );
 }
 export {
   Like as default
